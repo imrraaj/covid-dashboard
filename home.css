@@ -1,0 +1,103 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(1.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    transition: 0.4s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 70px;
+    font-style: normal;
+    text-decoration: aqua;
+    transform-style: none;
+    cursor: pointer;
+}
+
+.title h1 span {
+    transition: 0.5s;
+}
+
+.title h1:hover span:nth-child(1) {
+    margin-right: 10px;
+}
+
+.title h1:hover span:nth-child(1):after {
+    content: "-";
+}
+
+.title h1:hover span:nth-child(2) {
+    margin-left: 10px;
+}
+
+.title h1:hover span {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #fff, 0 0 160px #fff;
+}
+
+body section:nth-child(2) div h1
+{
+    margin: 0;
+    padding: 0;
+}
+body section:nth-child(2) div img
+{
+    padding: 2%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+
+
+body section:nth-child(3) .row
+{
+    margin: 0;
+    padding: 0;
+}
+
+body section:nth-child(3) .column
+{
+    margin-left: -1%;
+    width: 30%;
+    transition: 1s;
+}
+
+body section:nth-child(3) .column:hover
+{
+    transform: scale(1.1);
+}
