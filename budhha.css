@@ -1,0 +1,191 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: wheat;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    background-image: url(./styles/budhha.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    justify-content: flex-end;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 6px;
+    padding: 6px 3px;
+    margin-top: 20px;
+	padding-bottom:20px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    transition: 0.4s;
+}
+.active{
+	 color: lightcoral;
+	 text-decoration: underline 2px white;
+}
+.navbar ul li a:hover{
+    margin: 0 1px;
+    text-decoration: underline 2px white;
+    color: lightcoral;
+
+}
+
+.search{
+    position: absolute;
+    padding-left: 20px;
+    margin-left: 20px;
+    top: 15px;
+    left: -3%;
+}
+.search input{
+
+	height: 33px;
+    width: 19px;
+    padding-left: 15px;
+    border-radius: 24px;
+    outline: none;
+    background: transparent;
+    color: white;
+    border: 2px solid indianred;
+    font-size: 17px;
+	transition:0.5s ease;
+}
+.search input:hover{
+	height: 34px;
+    width: 191px;
+}
+.line{
+	display:none;
+    position: absolute;
+    top: 54%;
+    width: 300px;
+    height: 3px;
+    background-color: lightcoral;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.content{
+    position: absolute;
+    top: 41%;
+    /* margin-top: 30px; */
+    justify-content: center;
+    padding-left: 20px;
+}
+.content span{
+	color:wheat;
+	text-decoration:underline 2px solid indianred;
+}
+.content h1{
+    color: wheat;
+    font-size: 40px;
+    margin-bottom: 33px;
+}
+.content p{
+    width: 42%;
+}
+.content .btn{
+    color: white;
+    margin-top: 42px;
+    /*margin-left: 200px;*/
+    padding: 8px 14px;
+    outline: none;
+    background: transparent;
+    border: 2px solid indianred;
+    border-radius: 5px;
+	transition: 0.4s ease;
+    
+}
+.btn:hover{
+    background-color: indianred;
+}
+.social{
+    position: absolute;
+    right: -114px;
+    top: 56%;
+    transform: rotate(-90deg);
+}
+.social li{
+    list-style: none;
+    display: inline;
+    padding: 4px 10px;
+    /*background-color: white;*/
+	color:lightcoral;
+}
+
+.social li a{
+	text-decoration: none;
+    transition: 0.4s;
+}
+.social li a:hover{
+	color:lightcoral;
+}
+.credit{
+    font-size: 10px;
+    position: absolute;
+    top: 95%;
+    right: 1%;
+}
+.credit p:hover{
+	color:lightcoral;
+	text-decoration:underline;
+ 
+}
+
+@media(max-width:457px){
+	.search{
+	top: 52px;
+    left: -7%;
+	}
+}@media(max-width:651px){
+    .social{
+        width: 70%;
+        display: inline;
+        transform: rotate(0deg);
+        padding-top: 2px;
+        top:96%;
+        left:20%;
+        }
+		.credit{
+			display:none;
+		}
+}
+@media (max-width:500px){
+    .container{
+        background-repeat: no-repeat;
+        background-position: cover;
+        /* background-size: 473px 218px; */
+    }
+    .content h1{
+        color: wheat;
+        font-size: 30px;
+        /* margin-bottom: 33px; */
+    }
+    .container p{
+        width: 70%;
+		display:inline-block;
+    }
+    .content .btn{
+        position: absolute;
+        top: 85%;
+		left:3%;
+        outline: none;
+        background: transparent;
+        border: 2px solid indianred;
+        border-radius: 5px;
+    }
+    .btn:hover{
+        background-color: indianred;
+    }
+}
